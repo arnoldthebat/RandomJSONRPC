@@ -14,21 +14,20 @@ namespace RandomJSONRPC
     public class RandomJSONRPC
     {
         /** The URL to send the remote procedure calls to */
-	    private readonly String URL = "https://api.random.org/json-rpc/1/invoke";
+        private readonly string URL = "https://api.random.org/json-rpc/1/invoke";
 	    /** The following members are the names of the basic methods available in the random.org api */
-	    private readonly String INTEGER_METHOD = "generateIntegers";
-	    private readonly String DECIMALFRACTION_METHOD = "generateDecimalFractions";
-	    private readonly String GAUSSIAN_METHOD = "generateGaussians";
-	    private readonly String STRING_METHOD = "generateStrings";
-	    private readonly String UUID_METHOD = "generateUUIDs";
-	    private readonly String GET_USAGE_METHOD = "getUsage";
+	    private readonly string INTEGER_METHOD = "generateIntegers";
+        private readonly string DECIMALFRACTION_METHOD = "generateDecimalFractions";
+        private readonly string GAUSSIAN_METHOD = "generateGaussians";
+        private readonly string STRING_METHOD = "generateStrings";
+        private readonly string UUID_METHOD = "generateUUIDs";
+        private readonly string GET_USAGE_METHOD = "getUsage";
 	    /** The HTTP content type for the requests */
-	    private readonly String CONTENT_TYPE = "application/json";	
+        private readonly string CONTENT_TYPE = "application/json";	
 	    /** The default value for the optional replacement parameter */
 	    private bool REPLACEMENT_DEFAULT = true;
         private readonly int ONE_HOUR_IN_MILLIS = 3600000;
-
-	    private String mApiKey;
+        private string mApiKey;
 	    private long mMaxBlockingTime = 3000;
 	    /** The request object to be sent to the server */
         private JObject mJSONRequest;
