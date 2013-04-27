@@ -364,15 +364,12 @@ namespace RandomJSONRPC
                 using (requestStream = request.GetRequestStream())
                 {
                     requestStream.Write(bytes, 0, bytes.Length);
-                    requestStream.Flush();
-                    requestStream.Close();
 
                     using (response = request.GetResponse())
                     {
                         using (reader = new StreamReader(response.GetResponseStream()))
                         {
                             string content = reader.ReadToEnd();
-                            reader.Close();
                             mJSONResponse = JObject.Parse(content);
                         }
                     }
