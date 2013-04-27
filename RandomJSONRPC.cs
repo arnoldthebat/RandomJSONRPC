@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 
-namespace RandomJSONRPC
+namespace org.random.JSONRPC
 {
     public class RandomJSONRPC
     {

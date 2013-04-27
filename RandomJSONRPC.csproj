@@ -7,7 +7,7 @@
     <ProjectGuid>{CD0A2649-7DB8-477C-AFBB-AEF6CE25C7A2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RandomJSONRPC</RootNamespace>
+    <RootNamespace>org.random.JSONRPC</RootNamespace>
     <AssemblyName>RandomJSONRPC</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

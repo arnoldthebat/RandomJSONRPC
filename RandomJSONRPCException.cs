@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
 
-namespace RandomJSONRPC
+namespace org.random.JSONRPC
 {
     [Serializable]
     class RandomJSONRPCException : Exception
