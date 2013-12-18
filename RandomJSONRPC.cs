@@ -388,7 +388,7 @@ namespace org.random.JSONRPC
         /// <summary>
         /// Generic GetUsage for quota lookups
         /// </summary>
-        /// <returns>JOBkect with method params</returns>
+        /// <returns>JOBject with method params</returns>
         private JObject GetUsage()
         {
             mJSONParams = new JObject(
